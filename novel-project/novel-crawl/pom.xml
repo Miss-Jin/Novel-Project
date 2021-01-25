@@ -17,7 +17,12 @@
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
     <dependencies>
-
+<!--        导入common模块的依赖，以后要用此模块的东西-->
+        <dependency>
+            <groupId>com</groupId>
+            <artifactId>novel-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
 </project>

@@ -13,7 +13,7 @@ import java.net.BindException;
  * 通用的异常处理器
  */
 @Slf4j
-@RestControllerAdvice(basePackages = "com.zzz.controller")
+@RestControllerAdvice(basePackages = "com.zzz.com.ccc.controller")
 public class CommonExceptionHandler {
 
     /**

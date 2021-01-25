@@ -1,8 +1,9 @@
 package com.zzz.entity;
 
+import org.springframework.context.annotation.Bean;
+
 import java.util.Date;
 import javax.annotation.Generated;
-
 public class Book {
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
     private Long id;    //主键（非空）

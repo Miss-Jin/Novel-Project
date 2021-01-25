@@ -102,7 +102,7 @@
         <!--  爬虫框架  WebMagic  -->
         <dependency>
             <groupId>us.codecraft</groupId>
-            <artifactId>webmagic-core</artifactId>
+            <artifactId>webmagic-com.ccc.core</artifactId>
             <version>0.7.3</version>
         </dependency>
         <dependency>
