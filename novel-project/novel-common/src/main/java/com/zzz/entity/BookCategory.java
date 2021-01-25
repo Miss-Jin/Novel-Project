@@ -5,16 +5,16 @@ import javax.annotation.Generated;
 
 public class BookCategory {
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private Integer id;
+    private Integer id; //主键（非空）
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private Byte workDirection;
+    private Byte workDirection; //作品方向，0：男频，1：女频'
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private String name;
+    private String name;  //分类名（非空）
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private Byte sort;
+    private Byte sort;  //排序（非空）
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
     private Long createUserId;
