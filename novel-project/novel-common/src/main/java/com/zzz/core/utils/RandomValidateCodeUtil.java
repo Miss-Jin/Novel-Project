@@ -1,6 +1,6 @@
 package com.zzz.core.utils;
 
-import com.java2nb.novel.core.cache.CacheService;
+import com.zzz.core.cache.CacheService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

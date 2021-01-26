@@ -1,9 +1,11 @@
 package com.zzz.entity;
 
 import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Component;
 
 import java.util.Date;
 import javax.annotation.Generated;
+@Component
 public class Book {
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
     private Long id;    //主键（非空）

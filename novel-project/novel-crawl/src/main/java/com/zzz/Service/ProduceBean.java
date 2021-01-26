@@ -1,11 +1,13 @@
-package com.ccc.Service;
+package com.zzz.Service;
 
 import com.zzz.entity.*;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.util.Date;
 
-//封装网页数据产生的bean,这些bean之后用mapper写入数据库
+//提供数据，自动组装成bean并返回
+@Component
 public class ProduceBean {
     @Autowired
     Book book;
