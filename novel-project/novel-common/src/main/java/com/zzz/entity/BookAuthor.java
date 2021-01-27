@@ -1,44 +1,46 @@
 package com.zzz.entity;
 
+import org.springframework.stereotype.Component;
+
 import java.util.Date;
 import javax.annotation.Generated;
-
+@Component
 public class BookAuthor {
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private Long id;
+    private Long id; //主键(非空)
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private String inviteCode;
+    private String inviteCode;  //邀请码
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private String penName;
+    private String penName;  //笔名
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private String telPhone;
+    private String telPhone; //手机号码
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private String chatAccount;
+    private String chatAccount;  //QQ或者微信
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private String email;
+    private String email; //电子邮箱
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private Byte workDirection;
+    private Byte workDirection;  //作品方向，0：男频，1：女频
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private Byte status;
+    private Byte status;  //0：待审核，1：审核通过，正常，2：审核不通过
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private Date createTime;
+    private Date createTime;  //创建时间
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private Long createUserId;
+    private Long createUserId;  //申请人ID
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private Date updateTime;
+    private Date updateTime;  //更新时间
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private Long updateUserId;
+    private Long updateUserId;  //更新人ID
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
     public Long getId() {

@@ -1,20 +1,22 @@
 package com.zzz.entity;
 
+import org.springframework.stereotype.Component;
+
 import java.util.Date;
 import javax.annotation.Generated;
-
+@Component
 public class BookScreenBullet {
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private Long id;
+    private Long id;  //主键（非空）
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private Long contentId;
+    private Long contentId;  //小说内容ID（非空）
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private String screenBullet;
+    private String screenBullet; //小说弹幕内容（非空）
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private Date createTime;
+    private Date createTime;  //创建时间（非空）
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
     public Long getId() {

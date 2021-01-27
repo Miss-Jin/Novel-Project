@@ -1,35 +1,37 @@
 package com.zzz.entity;
 
+import org.springframework.stereotype.Component;
+
 import java.util.Date;
 import javax.annotation.Generated;
-
+@Component
 public class BookIndex {
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private Long id;
+    private Long id;  //主键（非空）
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private Long bookId;
+    private Long bookId;  //小说ID（非空）
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private Integer indexNum;
+    private Integer indexNum;  //目录号（非空）--第几章
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private String indexName;
+    private String indexName;   //目录名--章节名
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private Integer wordCount;
+    private Integer wordCount;  //字数
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private Byte isVip;
+    private Byte isVip;  //是否收费，1：收费，0：免费
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private Integer bookPrice;
+    private Integer bookPrice;  //章节费用（屋币）
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private Date createTime;
+    private Date createTime;  //目录创建时间
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private Date updateTime;
+    private Date updateTime;  //目录更新时间
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
     public Long getId() {

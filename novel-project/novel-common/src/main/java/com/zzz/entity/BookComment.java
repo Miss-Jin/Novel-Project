@@ -1,29 +1,31 @@
 package com.zzz.entity;
 
+import org.springframework.stereotype.Component;
+
 import java.util.Date;
 import javax.annotation.Generated;
-
+@Component
 public class BookComment {
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private Long id;
+    private Long id; //主键（非空）
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private Long bookId;
+    private Long bookId;  //小说ID
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private String commentContent;
+    private String commentContent;  //评价内容
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private Integer replyCount;
+    private Integer replyCount;  //回复数量
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private Byte auditStatus;
+    private Byte auditStatus;  //审核状态，0：待审核，1：审核通过，2：审核不通过
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private Date createTime;
+    private Date createTime;  //评价时间
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private Long createUserId;
+    private Long createUserId;  //评价人
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
     public Long getId() {

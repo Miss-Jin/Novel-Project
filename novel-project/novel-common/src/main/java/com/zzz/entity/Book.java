@@ -1,86 +1,89 @@
 package com.zzz.entity;
 
+import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Component;
+
 import java.util.Date;
 import javax.annotation.Generated;
-
+@Component
 public class Book {
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private Long id;
+    private Long id;    //主键（非空）
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private Byte workDirection;
+    private Byte workDirection;    //作品方向，0：男频，1：女频
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private Integer catId;
+    private Integer catId;  //分类ID
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private String catName;
+    private String catName;  //分类名
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private String picUrl;
+    private String picUrl;  //小说封面（非空）
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private String bookName;
+    private String bookName;  //小说名（非空）
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private Long authorId;
+    private Long authorId;  //作者ID
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private String authorName;
+    private String authorName;  //作者名（非空）
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private String bookDesc;
+    private String bookDesc;  //书籍描述（非空）
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private Float score;
+    private Float score;  //评分，预留字段（非空）
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private Byte bookStatus;
+    private Byte bookStatus;   //书籍状态，0：连载，1：完结（非空）
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private Long visitCount;
+    private Long visitCount;  //点击量
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private Integer wordCount;
+    private Integer wordCount;  //总字数
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private Integer commentCount;
+    private Integer commentCount;  //评论数
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private Integer yesterdayBuy;
+    private Integer yesterdayBuy;  //昨日订阅数
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private Long lastIndexId;
+    private Long lastIndexId;  //最新目录ID
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private String lastIndexName;
+    private String lastIndexName;  //最新目录名
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private Date lastIndexUpdateTime;
+    private Date lastIndexUpdateTime;  //最新目录更新时间
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private Byte isVip;
+    private Byte isVip;  //是否收费，1：收费，0：免费
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private Byte status;
+    private Byte status;  //状态：0：入库，1：上架
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private Date updateTime;
+    private Date updateTime;  //更新时间（非空）
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private Date createTime;
+    private Date createTime;  //创建时间
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private Integer crawlSourceId;
+    private Integer crawlSourceId;  //爬虫源站ID
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private String crawlBookId;
+    private String crawlBookId;  //抓取的源站小说ID
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private Date crawlLastTime;
+    private Date crawlLastTime;  //最后一次的抓取时间
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private Byte crawlIsStop;
+    private Byte crawlIsStop;  //是否已停止更新，0：未停止，1：已停止
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
     public Long getId() {

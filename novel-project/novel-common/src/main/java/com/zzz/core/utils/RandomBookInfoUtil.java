@@ -1,4 +1,4 @@
-package com.zzz.core.utils;
+package com.zzz.com.ccc.core.utils;
 
 import java.util.Random;
 

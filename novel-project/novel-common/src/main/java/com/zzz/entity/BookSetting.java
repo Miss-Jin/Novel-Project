@@ -1,32 +1,34 @@
 package com.zzz.entity;
 
+import org.springframework.stereotype.Component;
+
 import java.util.Date;
 import javax.annotation.Generated;
-
+@Component
 public class BookSetting {
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private Long id;
+    private Long id;  //主键（非空）
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private Long bookId;
+    private Long bookId;  //小说ID
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private Byte sort;
+    private Byte sort;  //排序号
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private Byte type;
+    private Byte type;  //类型，0：轮播图，1：顶部小说栏设置，2：本周强推，3：热门推荐，4：精品推荐
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private Date createTime;
+    private Date createTime;  //创建时间
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private Long createUserId;
+    private Long createUserId;  //创建人ID
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private Date updateTime;
+    private Date updateTime;  //更新时间
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private Long updateUserId;
+    private Long updateUserId;  //更新人ID
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
     public Long getId() {

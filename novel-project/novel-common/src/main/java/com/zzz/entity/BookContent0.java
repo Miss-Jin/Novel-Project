@@ -4,13 +4,13 @@ import javax.annotation.Generated;
 
 public class BookContent0 {
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private Long id;
+    private Long id;  //主键（非空）
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private Long indexId;
+    private Long indexId;  //目录ID
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
-    private String content;
+    private String content;  //正文
 
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
     public Long getId() {
