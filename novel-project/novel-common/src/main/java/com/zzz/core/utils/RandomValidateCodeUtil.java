@@ -1,6 +1,6 @@
 package com.zzz.core.utils;
 
-import com.java2nb.novel.core.cache.CacheService;
+import com.zzz.core.cache.CacheService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,6 +11,7 @@ import java.awt.image.BufferedImage;
 import java.util.Random;
 
 /**
+ * 验证码类
  * @author xiongxy
  */
 public class RandomValidateCodeUtil {

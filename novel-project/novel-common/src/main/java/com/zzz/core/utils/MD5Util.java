@@ -7,12 +7,18 @@ import sun.misc.BASE64Encoder;
 import java.security.MessageDigest;
 
 /**
+ * 该类功能为数据加密
  * @author 11797
  */
 public class MD5Util {
 
     private static final String DEFAUL_CHARSET = "utf-8" ;
 
+    /**
+     * 将十进制数组转为十六进制
+     * @param b
+     * @return
+     */
     private static String byteArrayToHexString(byte[] b) {
         StringBuffer resultSb = new StringBuffer();
         for (int i = 0; i < b.length; i++) {
@@ -22,6 +28,11 @@ public class MD5Util {
         return resultSb.toString();
     }
 
+    /**
+     * 将十进制转换为十六进制
+     * @param b
+     * @return
+     */
     private static String byteToHexString(byte b) {
         int n = b;
         if (n < 0) {
@@ -32,6 +43,12 @@ public class MD5Util {
         return HEX_DIGITS[d1] + HEX_DIGITS[d2];
     }
 
+    /**
+     * 将字符串加密，并输出成十六进制数
+     * @param origin
+     * @param charsetname
+     * @return
+     */
     @SneakyThrows
     public static String MD5Encode(String origin,String charsetname) {
         MessageDigest md = MessageDigest.getInstance("MD5");
