@@ -62,7 +62,7 @@
             <artifactId>lombok</artifactId>
         </dependency>
 
-        <!--  脚手架  SpringBoot -->
+        <!--  脚手架  SpringBoot -->F
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -72,7 +72,7 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
             <version>2.4.1</version>
-        </dependency>
+        </dependency>F
 
         <!-- 持久层框架  MyBatis  -->
         <dependency>

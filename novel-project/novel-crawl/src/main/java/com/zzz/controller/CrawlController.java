@@ -13,7 +13,7 @@ import us.codecraft.webmagic.pipeline.FilePipeline;
 public class CrawlController {
     //开始爬取
     public void startCrawler(){
-        Spider.create(new CorePageProcessorTest())
+        Spider.create(new CorePageProcessor())
                 .addUrl("https://www.biquge.cn/xuanhuan/")
                 .thread(10)
                 .run();
