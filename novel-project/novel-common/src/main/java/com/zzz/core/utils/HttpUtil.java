@@ -10,7 +10,11 @@ public class HttpUtil {
 
     private static RestTemplate restTemplate = RestTemplateUtil.getInstance("utf-8");
 
-
+    /**
+     * 方法功能待备注
+     * @param url
+     * @return
+     */
     public static String getByHttpClient(String url) {
         try {
 
