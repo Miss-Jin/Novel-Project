@@ -10,7 +10,7 @@ import javax.sql.DataSource;
 
 //往容器添加常用的类方便调用
 @Configurable
-@ComponentScan(basePackages = {"com.zzz"})
+//@ComponentScan(basePackages = {"com.zzz"})
 public class CrawlerConfig {
 
 

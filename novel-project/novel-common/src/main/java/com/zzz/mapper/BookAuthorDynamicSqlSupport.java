@@ -5,7 +5,9 @@ import java.util.Date;
 import javax.annotation.Generated;
 import org.mybatis.dynamic.sql.SqlColumn;
 import org.mybatis.dynamic.sql.SqlTable;
+import org.springframework.stereotype.Component;
 
+@Component
 public final class BookAuthorDynamicSqlSupport {
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
     public static final BookAuthor bookAuthor = new BookAuthor();

@@ -1,8 +1,9 @@
-package com.zzz.Service;
+package com.zzz.util;
 
 import com.zzz.entity.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.util.Date;
 
@@ -42,9 +43,8 @@ public class ProduceBean {
         return book;
     }
 
-    public BookAuthor getBookAuthor(Long id,String inviteCode,String penName,String telPhone,String chatAccount,String email,Byte workDirection,Byte status,Date createTime,Long createUserId,Date updateTime,Long updateUserId){
+    public BookAuthor getBookAuthor(String inviteCode,String penName,String telPhone,String chatAccount,String email,Byte workDirection,Byte status,Date createTime,Long createUserId,Date updateTime,Long updateUserId){
         BookAuthor bookAuthor = new BookAuthor();
-        bookAuthor.setId(id);
         bookAuthor.setInviteCode(inviteCode);
         bookAuthor.setPenName(penName);
         bookAuthor.setTelPhone(telPhone);
@@ -103,9 +103,8 @@ public class ProduceBean {
         return bookContent;
     }
 
-    public BookIndex getBookIndex(Long id,Long bookId,Integer indexNum,String indexName,Integer wordCount,Byte isVip,Integer bookPrice,Date createTime,Date updateTime){
+    public BookIndex getBookIndex(Long bookId,Integer indexNum,String indexName,Integer wordCount,Byte isVip,Integer bookPrice,Date createTime,Date updateTime){
         BookIndex bookIndex = new BookIndex();
-        bookIndex.setId(id);
         bookIndex.setBookId(bookId);
         bookIndex.setIndexNum(indexNum);
         bookIndex.setIndexName(indexName);
@@ -136,6 +135,7 @@ public class ProduceBean {
         bookSetting.setUpdateUserId(updateUserId);
         return bookSetting;
     }
+
 
 
 }

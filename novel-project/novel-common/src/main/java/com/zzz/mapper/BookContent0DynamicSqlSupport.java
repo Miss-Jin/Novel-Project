@@ -4,7 +4,9 @@ import java.sql.JDBCType;
 import javax.annotation.Generated;
 import org.mybatis.dynamic.sql.SqlColumn;
 import org.mybatis.dynamic.sql.SqlTable;
+import org.springframework.stereotype.Component;
 
+@Component
 public final class BookContent0DynamicSqlSupport {
     @Generated("org.mybatis.generator.api.MyBatisGenerator")
     public static final BookContent0 bookContent0 = new BookContent0();

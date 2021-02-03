@@ -10,7 +10,9 @@ import org.springframework.context.annotation.ComponentScan;
 
 import java.util.Arrays;
 
-@SpringBootApplication(exclude={DruidDataSourceAutoConfigure.class})
+//@SpringBootApplication(exclude={DruidDataSourceAutoConfigure.class})
+//scanBasePackages = {"com.zzz"}
+@SpringBootApplication
 public class NovelCrawlApplication {
 
         public static void main(String[] args) {
